@@ -41,7 +41,7 @@ namespace SistemaGestionUI.SoldProducts
             {
                 soldProductSelected = (ProductoVendido)dataGridViewSoldProducts.Rows[e.RowIndex].DataBoundItem;
 
-                SoldProductBusiness.DeleteSoldProduct(soldProductSelected);
+                SoldProductBusiness.DeleteSoldProduct(soldProductSelected.Id);
                 this.LoadContent();
                 MessageBox.Show("Se ha eliminado el producto vendido satisfactoriamente.");
             }

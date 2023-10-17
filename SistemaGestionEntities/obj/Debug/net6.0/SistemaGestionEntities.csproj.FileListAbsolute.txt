@@ -9,3 +9,14 @@ D:\CoderHouse-C#\Proyecto final - new\SistemaGestionEntities\obj\Debug\net6.0\Si
 D:\CoderHouse-C#\Proyecto final - new\SistemaGestionEntities\obj\Debug\net6.0\refint\SistemaGestionEntities.dll
 D:\CoderHouse-C#\Proyecto final - new\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.pdb
 D:\CoderHouse-C#\Proyecto final - new\SistemaGestionEntities\obj\Debug\net6.0\ref\SistemaGestionEntities.dll
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.deps.json
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.dll
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.pdb
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.GeneratedMSBuildEditorConfig.editorconfig
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.AssemblyInfoInputs.cache
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.AssemblyInfo.cs
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.csproj.CoreCompileInputs.cache
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.dll
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\refint\SistemaGestionEntities.dll
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.pdb
+D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\ref\SistemaGestionEntities.dll

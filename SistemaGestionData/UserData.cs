@@ -68,14 +68,19 @@ namespace SistemaGestionData
                 throw;
             }
         }
-        public static void DeleteUser(Usuario user)
+        public static void DeleteUser(int userId)
         {
             try
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    context.Usuarios.Remove(user);
-                    context.SaveChanges();
+                    var user = GetUserById(userId, context);
+
+                    if (user != null)
+                    {
+                        context.Usuarios.Remove(user);
+                        context.SaveChanges();
+                    }
                 }
             }
             catch (Exception ex)

@@ -18,13 +18,21 @@ namespace SistemaGestionBusiness
         {
             SoldProductData.CreateSoldProduct(soldProduct);
         }
+        public static void CreateSoldProducts(Venta sale)
+        {
+            SoldProductData.CreateSoldProducts(sale);
+        }
         public static void UpdateSoldProduct(ProductoVendido soldProduct)
         {
             SoldProductData.UpdateSoldProduct(soldProduct);
         }
-        public static void DeleteSoldProduct(ProductoVendido soldProduct)
+        public static void DeleteSoldProduct(int soldProductId)
         {
-            SoldProductData.DeleteSoldProduct(soldProduct);
+            SoldProductData.DeleteSoldProduct(soldProductId);
+        }
+        public static void DeleteSoldProducts(int productId)
+        {
+            SoldProductData.DeleteSoldProducts(productId);
         }
     }
 }

@@ -68,14 +68,19 @@ namespace SistemaGestionData
                 throw;
             }
         }
-        public static void DeleteSale(Venta sale)
+        public static void DeleteSale(int saleId)
         {
             try
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    context.Ventas.Remove(sale);
-                    context.SaveChanges();
+                    var sale = GetSaleById(saleId, context);
+
+                    if (sale != null)
+                    {
+                        context.Ventas.Remove(sale);
+                        context.SaveChanges();
+                    }
                 }
             }
             catch (Exception ex)

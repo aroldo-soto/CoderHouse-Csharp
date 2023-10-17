@@ -38,7 +38,7 @@ namespace SistemaGestionUI.Sales
             {
                 saleSelected = (Venta)dataGridViewSales.Rows[e.RowIndex].DataBoundItem;
 
-                SaleBusiness.DeleteSale(saleSelected);
+                SaleBusiness.DeleteSale(saleSelected.Id);
                 this.LoadContent();
                 MessageBox.Show("Se ha eliminado la venta satisfactoriamente.");
             }

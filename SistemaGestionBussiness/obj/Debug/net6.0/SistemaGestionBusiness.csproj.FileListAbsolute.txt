@@ -15,3 +15,20 @@ D:\CoderHouse-C#\Proyecto final - new\SistemaGestionBussiness\obj\Debug\net6.0\S
 D:\CoderHouse-C#\Proyecto final - new\SistemaGestionBussiness\obj\Debug\net6.0\refint\SistemaGestionBusiness.dll
 D:\CoderHouse-C#\Proyecto final - new\SistemaGestionBussiness\obj\Debug\net6.0\SistemaGestionBusiness.pdb
 D:\CoderHouse-C#\Proyecto final - new\SistemaGestionBussiness\obj\Debug\net6.0\ref\SistemaGestionBusiness.dll
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\bin\Debug\net6.0\SistemaGestionBusiness.deps.json
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\bin\Debug\net6.0\SistemaGestionBusiness.dll
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\bin\Debug\net6.0\SistemaGestionBusiness.pdb
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\bin\Debug\net6.0\SistemaGestionData.dll
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\bin\Debug\net6.0\SistemaGestionEntities.dll
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\bin\Debug\net6.0\SistemaGestionData.pdb
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\bin\Debug\net6.0\SistemaGestionEntities.pdb
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\obj\Debug\net6.0\SistemaGestionBusiness.csproj.AssemblyReference.cache
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\obj\Debug\net6.0\SistemaGestionBusiness.GeneratedMSBuildEditorConfig.editorconfig
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\obj\Debug\net6.0\SistemaGestionBusiness.AssemblyInfoInputs.cache
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\obj\Debug\net6.0\SistemaGestionBusiness.AssemblyInfo.cs
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\obj\Debug\net6.0\SistemaGestionBusiness.csproj.CoreCompileInputs.cache
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\obj\Debug\net6.0\SistemaGestionBusiness.csproj.CopyComplete
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\obj\Debug\net6.0\SistemaGestionBusiness.dll
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\obj\Debug\net6.0\refint\SistemaGestionBusiness.dll
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\obj\Debug\net6.0\SistemaGestionBusiness.pdb
+D:\CoderHouse-C#\Proyecto final\SistemaGestionBussiness\obj\Debug\net6.0\ref\SistemaGestionBusiness.dll

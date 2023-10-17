@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4g74I+PBI7KiLMz+cgPSzWHFFAmaWjCRv7f6doKw2ovtNdTXkVdwis+gaeqJltw0E9vm0Kr1KEkC7kDsRRoFGA==",
+  "dgSpecHash": "WyvM86x0tqKGLzHxUUDQyOo0qYIOJMTjhpvR04nDdr5FkEodin3J2Cx3Kl6BfmnUK3d2tK+QTmtBAfeo7zJavA==",
   "success": true,
-  "projectFilePath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionData\\SistemaGestionData.csproj",
+  "projectFilePath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aroldo\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Aroldo\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

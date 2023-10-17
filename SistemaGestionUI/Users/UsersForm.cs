@@ -65,7 +65,7 @@ namespace SistemaGestionUI.Users
             {
                 userSelected = (Usuario)dataGridViewUsers.Rows[e.RowIndex].DataBoundItem;
 
-                UserBusiness.DeleteUser(userSelected);
+                UserBusiness.DeleteUser(userSelected.Id);
                 this.LoadContent();
                 MessageBox.Show("Se ha eliminado el usuario satisfactoriamente.");
             }

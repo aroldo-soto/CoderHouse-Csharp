@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using SistemaGestionData;
 using SistemaGestionEntities;
 using System;
 using System.Collections.Generic;
@@ -68,14 +69,54 @@ namespace SistemaGestionData
                 throw;
             }
         }
-        public static void DeleteProduct(Producto product)
+        public static void DeductStock(Venta sale)
         {
             try
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    context.Productos.Remove(product);
+                    foreach (var product in sale.Productos)
+                    {
+                        var existingProduct = context.Productos.FirstOrDefault(p => p.Descripciones == product.Descripciones);
+
+                        if (existingProduct != null)
+                        {
+                            if (product.Stock <= existingProduct.Stock)
+                            {
+                                existingProduct.Stock -= product.Stock;
+                            }
+                            else
+                            {
+                                throw new Exception($"Insufficient stock for product ID {product.Id}.");
+                            }
+                        }
+                        else
+                        {
+                            throw new Exception($"Product not found for ID {product.Id}.");
+                        }
+                    }
+
                     context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+        public static void DeleteProduct(int productId)
+        {
+            try
+            {
+                using (var context = new ApplicationDbContext())
+                {
+                    var product = GetProductById(productId, context);
+
+                    if (product != null)
+                    {
+                        context.Productos.Remove(product);
+                        context.SaveChanges();
+                    }
                 }
             }
             catch (Exception ex)

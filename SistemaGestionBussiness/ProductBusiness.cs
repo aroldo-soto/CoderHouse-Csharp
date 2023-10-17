@@ -22,9 +22,13 @@ namespace SistemaGestionBussiness
         {
             ProductData.UpdateProduct(product);
         }
-        public static void DeleteProduct(Producto product)
+        public static void DeductStock(Venta sale)
         {
-            ProductData.DeleteProduct(product);
+            ProductData.DeductStock(sale);
+        }
+        public static void DeleteProduct(int productId)
+        {
+            ProductData.DeleteProduct(productId);
         }
     }
 }

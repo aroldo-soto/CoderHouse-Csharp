@@ -22,9 +22,9 @@ namespace SistemaGestionBusiness
         {
             SaleData.UpdateSale(sale);
         }
-        public static void DeleteSale(Venta sale)
+        public static void DeleteSale(int saleId)
         {
-            SaleData.DeleteSale(sale);
+            SaleData.DeleteSale(saleId);
         }
     }
 }

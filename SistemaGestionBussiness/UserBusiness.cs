@@ -22,9 +22,9 @@ namespace SistemaGestionBusiness
         {
             UserData.UpdateUser(user);
         }
-        public static void DeleteUser(Usuario user)
+        public static void DeleteUser(int userId)
         {
-            UserData.DeleteUser(user);
+            UserData.DeleteUser(userId);
         }
     }
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
+      "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
       "projectName": "SistemaGestionEntities",
-      "projectPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
+      "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
       "packagesPath": "C:\\Users\\Aroldo\\.nuget\\packages\\",
-      "outputPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\obj\\",
+      "outputPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aroldo\\AppData\\Roaming\\NuGet\\NuGet.Config",

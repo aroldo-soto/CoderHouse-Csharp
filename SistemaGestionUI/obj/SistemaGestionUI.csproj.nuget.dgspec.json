@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionUI\\SistemaGestionUI.csproj": {}
+    "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionUI\\SistemaGestionUI.csproj": {}
   },
   "projects": {
-    "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj": {
+    "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj",
+        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj",
         "projectName": "SistemaGestionBusiness",
-        "projectPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj",
+        "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj",
         "packagesPath": "C:\\Users\\Aroldo\\.nuget\\packages\\",
-        "outputPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionBussiness\\obj\\",
+        "outputPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aroldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionData\\SistemaGestionData.csproj": {
-                "projectPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionData\\SistemaGestionData.csproj"
+              "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj": {
+                "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj"
               },
-              "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
-                "projectPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
+              "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
+                "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionData\\SistemaGestionData.csproj": {
+    "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionData\\SistemaGestionData.csproj",
+        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj",
         "projectName": "SistemaGestionData",
-        "projectPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionData\\SistemaGestionData.csproj",
+        "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj",
         "packagesPath": "C:\\Users\\Aroldo\\.nuget\\packages\\",
-        "outputPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionData\\obj\\",
+        "outputPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aroldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
-                "projectPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
+              "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
+                "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
               }
             }
           }
@@ -141,14 +141,14 @@
         }
       }
     },
-    "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
+    "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
+        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
         "projectName": "SistemaGestionEntities",
-        "projectPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
+        "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
         "packagesPath": "C:\\Users\\Aroldo\\.nuget\\packages\\",
-        "outputPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionEntities\\obj\\",
+        "outputPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aroldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -196,14 +196,14 @@
         }
       }
     },
-    "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionUI\\SistemaGestionUI.csproj": {
+    "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionUI\\SistemaGestionUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionUI\\SistemaGestionUI.csproj",
+        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionUI\\SistemaGestionUI.csproj",
         "projectName": "SistemaGestionUI",
-        "projectPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionUI\\SistemaGestionUI.csproj",
+        "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionUI\\SistemaGestionUI.csproj",
         "packagesPath": "C:\\Users\\Aroldo\\.nuget\\packages\\",
-        "outputPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionUI\\obj\\",
+        "outputPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aroldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -220,11 +220,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj": {
-                "projectPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj"
+              "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj": {
+                "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj"
               },
-              "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionData\\SistemaGestionData.csproj": {
-                "projectPath": "D:\\CoderHouse-C#\\Proyecto final - new\\SistemaGestionData\\SistemaGestionData.csproj"
+              "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj": {
+                "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj"
               }
             }
           }

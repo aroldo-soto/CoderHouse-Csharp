@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionData", "..\Si
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionEntities", "..\SistemaGestionEntities\SistemaGestionEntities.csproj", "{63217F75-54A7-4B13-8CF6-B68B943BC594}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionBusiness", "..\SistemaGestionBussiness\SistemaGestionBusiness.csproj", "{6C251F9E-9CE3-49C7-BA08-B7565852AD4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionBusiness", "..\SistemaGestionBussiness\SistemaGestionBusiness.csproj", "{6C251F9E-9CE3-49C7-BA08-B7565852AD4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionAPI", "..\SistemaGestionAPI\SistemaGestionAPI.csproj", "{3C322E99-BB79-4CD5-8C10-D3C79EBC7C63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6C251F9E-9CE3-49C7-BA08-B7565852AD4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C251F9E-9CE3-49C7-BA08-B7565852AD4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C251F9E-9CE3-49C7-BA08-B7565852AD4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C322E99-BB79-4CD5-8C10-D3C79EBC7C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C322E99-BB79-4CD5-8C10-D3C79EBC7C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C322E99-BB79-4CD5-8C10-D3C79EBC7C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C322E99-BB79-4CD5-8C10-D3C79EBC7C63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
