@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj": {}
+    "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj": {}
   },
   "projects": {
-    "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj": {
+    "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj",
+        "projectUniqueName": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj",
         "projectName": "SistemaGestionBusiness",
-        "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj",
-        "packagesPath": "C:\\Users\\Aroldo\\.nuget\\packages\\",
-        "outputPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionBussiness\\obj\\",
+        "projectPath": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionBussiness\\SistemaGestionBusiness.csproj",
+        "packagesPath": "C:\\Users\\arold\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionBussiness\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aroldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\arold\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj": {
-                "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj"
+              "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj": {
+                "projectPath": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj"
               },
-              "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
-                "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
+              "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
+                "projectPath": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
               }
             }
           }
@@ -62,21 +62,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj": {
+    "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj",
+        "projectUniqueName": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj",
         "projectName": "SistemaGestionData",
-        "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj",
-        "packagesPath": "C:\\Users\\Aroldo\\.nuget\\packages\\",
-        "outputPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionData\\obj\\",
+        "projectPath": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionData\\SistemaGestionData.csproj",
+        "packagesPath": "C:\\Users\\arold\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aroldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\arold\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,8 +90,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
-                "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
+              "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
+                "projectPath": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
               }
             }
           }
@@ -137,21 +137,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
+    "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
+        "projectUniqueName": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
         "projectName": "SistemaGestionEntities",
-        "projectPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
-        "packagesPath": "C:\\Users\\Aroldo\\.nuget\\packages\\",
-        "outputPath": "D:\\CoderHouse-C#\\Proyecto final\\SistemaGestionEntities\\obj\\",
+        "projectPath": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionEntities\\SistemaGestionEntities.csproj",
+        "packagesPath": "C:\\Users\\arold\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arold\\Documents\\CoderHouse - C#\\Proyecto final\\SistemaGestionEntities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aroldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\arold\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -192,7 +192,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

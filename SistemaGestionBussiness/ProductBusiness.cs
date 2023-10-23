@@ -14,13 +14,17 @@ namespace SistemaGestionBussiness
         {
             return ProductData.GetProducts();
         }
+        public static Producto GetProductById(int productId)
+        {
+            return ProductData.GetProductById(productId);
+        }
         public static void CreateProduct(Producto product)
         {
             ProductData.CreateProduct(product);
         }
-        public static void UpdateProduct(Producto product)
+        public static void UpdateProduct(int productId, Producto product)
         {
-            ProductData.UpdateProduct(product);
+            ProductData.UpdateProduct(productId, product);
         }
         public static void DeductStock(Venta sale)
         {

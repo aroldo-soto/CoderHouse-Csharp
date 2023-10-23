@@ -23,14 +23,16 @@ namespace SistemaGestionData
                 return null;
             }
         }
-        public static Venta GetSaleById(int saleId, ApplicationDbContext context)
+        public static Venta GetSaleById(int saleId)
         {
             try
             {
-                var sale = context.Ventas.Find(saleId);
+                using (var context = new ApplicationDbContext())
+                {
+                    var sale = context.Ventas.Find(saleId);
 
-                return sale;
-
+                    return sale;
+                }
             }
             catch (Exception ex)
             {
@@ -52,15 +54,27 @@ namespace SistemaGestionData
                 throw;
             }
         }
-        public static void UpdateSale(Venta sale)
+        public static void UpdateSale(int saleId, Venta sale)
         {
             try
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    var saleFound = GetSaleById(sale.Id, context);
-                    context.Entry(saleFound).CurrentValues.SetValues(sale);
-                    context.SaveChanges();
+                    var saleFound = context.Ventas.Find(saleId);
+
+                    if (saleFound != null)
+                    {
+                        saleFound.Id = saleFound.Id;
+                        saleFound.Comentarios = sale.Comentarios;
+                        saleFound.IdUsuario = sale.IdUsuario;
+                        saleFound.Productos = saleFound.Productos;
+
+                        context.SaveChanges();
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException($"Sale with ID {sale.Id} not found.");
+                    }
                 }
             }
             catch (Exception ex)
@@ -74,7 +88,7 @@ namespace SistemaGestionData
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    var sale = GetSaleById(saleId, context);
+                    var sale = GetSaleById(saleId);
 
                     if (sale != null)
                     {

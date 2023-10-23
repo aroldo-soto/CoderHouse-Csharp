@@ -25,14 +25,16 @@ namespace SistemaGestionData
                 return null;
             }
         }
-        public static ProductoVendido GetSoldProductById(int soldProductId, ApplicationDbContext context)
+        public static ProductoVendido GetSoldProductById(int soldProductId)
         {
             try
             {
-                var soldProduct = context.ProductosVendidos.Find(soldProductId);
+                using (var context = new ApplicationDbContext())
+                {
+                    var soldProduct = context.ProductosVendidos.Find(soldProductId);
 
-                return soldProduct;
-
+                    return soldProduct;
+                }
             }
             catch (Exception ex)
             {
@@ -84,15 +86,27 @@ namespace SistemaGestionData
                 throw;
             }
         }
-        public static void UpdateSoldProduct(ProductoVendido soldProduct)
+        public static void UpdateSoldProduct(int soldProductId, ProductoVendido soldProduct)
         {
             try
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    var soldProductFound = GetSoldProductById(soldProduct.Id, context);
-                    context.Entry(soldProductFound).CurrentValues.SetValues(soldProduct);
-                    context.SaveChanges();
+                    var soldProductFound = context.ProductosVendidos.Find(soldProductId);
+
+                    if (soldProductFound != null)
+                    {
+                        soldProductFound.Id = soldProductFound.Id;
+                        soldProductFound.IdProducto = soldProduct.IdProducto;
+                        soldProductFound.Stock = soldProduct.Stock;
+                        soldProductFound.IdVenta = soldProductFound.IdVenta;
+
+                        context.SaveChanges();
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException($"SoldProduct with ID {soldProduct.Id} not found.");
+                    }
                 }
             }
             catch (Exception ex)
@@ -106,7 +120,7 @@ namespace SistemaGestionData
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    var soldProduct = GetSoldProductById(soldProductId, context);
+                    var soldProduct = GetSoldProductById(soldProductId);
 
                     if (soldProduct != null)
                     {

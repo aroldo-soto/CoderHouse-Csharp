@@ -10,27 +10,101 @@ namespace SistemaGestionAPI.Controllers
     [ApiController]
     public class SalesController : ControllerBase
     {
-        [HttpGet(Name = "GetSales")]
-        public IEnumerable<Venta> Get()
+        [HttpGet]
+        public IActionResult GetSales()
         {
-            return SaleBusiness.GetSales();
+            try
+            {
+                var sales = SaleBusiness.GetSales();
+
+                return Ok(sales);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
-        [HttpPost(Name = "CreateSale")]
-        public void Post([FromBody] Venta sale)
+        [HttpGet("{saleId}")]
+        public IActionResult GetSaleById(int saleId)
         {
-            SaleBusiness.CreateSale(sale);
-            SoldProductBusiness.CreateSoldProducts(sale);
-            ProductBusiness.DeductStock(sale);
+            try
+            {
+                var sale = SaleBusiness.GetSaleById(saleId);
+
+                if (sale != null)
+                {
+                    return Ok(sale);
+                }
+                else
+                {
+                    return NotFound("Sale not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
-        [HttpPut(Name = "UpdateSale")]
-        public void Put([FromBody] Venta sale)
+        [HttpPost]
+        public IActionResult CreateSale([FromBody] Venta sale)
         {
-            SaleBusiness.UpdateSale(sale);
+            if (sale == null)
+            {
+                return BadRequest("Invalid sale data.");
+            }
+
+            try
+            {
+                SaleBusiness.CreateSale(sale);
+                SoldProductBusiness.CreateSoldProducts(sale);
+                ProductBusiness.DeductStock(sale);
+
+                return Ok("Venta creada satisfactoriamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
-        [HttpDelete(Name = "DeleteSale")]
-        public void Delete([FromBody] int saleId)
+        [HttpPut("{saleId}")]
+        public IActionResult UpdateSale(int saleId, [FromBody] Venta sale)
         {
-            SaleBusiness.DeleteSale(saleId);
+            if (sale == null)
+            {
+                return BadRequest("Invalid sale data.");
+            }
+
+            try
+            {
+                SaleBusiness.UpdateSale(saleId, sale);
+
+                return Ok("Venta actualizada satisfactoriamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
+        }
+        [HttpDelete("{saleId}")]
+        public IActionResult DeleteSaleById(int saleId)
+        {
+            try
+            {
+                var sale = SaleBusiness.GetSaleById(saleId);
+
+                if (sale == null)
+                {
+                    return NotFound();
+                }
+
+                SaleBusiness.DeleteSale(saleId);
+
+                return Ok("Venta eliminada satisfactoriamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
     }
 }

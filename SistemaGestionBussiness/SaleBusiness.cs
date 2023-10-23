@@ -14,13 +14,17 @@ namespace SistemaGestionBusiness
         {
             return SaleData.GetSales();
         }
+        public static Venta GetSaleById(int saleId)
+        {
+            return SaleData.GetSaleById(saleId);
+        }
         public static void CreateSale(Venta sale)
         {
             SaleData.CreateSale(sale);
         }
-        public static void UpdateSale(Venta sale)
+        public static void UpdateSale(int saleId, Venta sale)
         {
-            SaleData.UpdateSale(sale);
+            SaleData.UpdateSale(saleId, sale);
         }
         public static void DeleteSale(int saleId)
         {

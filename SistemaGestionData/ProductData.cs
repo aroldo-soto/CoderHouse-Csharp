@@ -20,19 +20,22 @@ namespace SistemaGestionData
                 var productos = db.Productos.OrderBy(x => x.Id).ToList();
 
                 return productos;
-            } catch (Exception ex)
+            } 
+            catch (Exception ex)
             {
                 return null;
             }
         }
-        public static Producto GetProductById(int productId, ApplicationDbContext context)
+        public static Producto GetProductById(int productId)
         {
             try
             {
-                var product = context.Productos.Find(productId);
+                using (var context = new ApplicationDbContext())
+                {
+                    var product = context.Productos.Find(productId);
 
-                return product;
-
+                    return product;
+                }
             }
             catch (Exception ex)
             {
@@ -53,15 +56,29 @@ namespace SistemaGestionData
                 throw;
             }
         }
-        public static void UpdateProduct(Producto product)
+        public static void UpdateProduct(int productId, Producto product)
         {
             try
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    var productFound = GetProductById(product.Id, context);
-                    context.Entry(productFound).CurrentValues.SetValues(product);
-                    context.SaveChanges();
+                    var productFound = context.Productos.Find(productId);
+
+                    if (productFound != null)
+                    {
+                        productFound.Id = productFound.Id;
+                        productFound.Descripciones = product.Descripciones;
+                        productFound.Costo = product.Costo;
+                        productFound.PrecioVenta = product.PrecioVenta;
+                        productFound.Stock = product.Stock;
+                        productFound.IdUsuario = product.IdUsuario;
+
+                        context.SaveChanges();
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException($"Product with ID {product.Id} not found.");
+                    }
                 }
             }
             catch (Exception ex)
@@ -110,7 +127,7 @@ namespace SistemaGestionData
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    var product = GetProductById(productId, context);
+                    var product = GetProductById(productId);
 
                     if (product != null)
                     {

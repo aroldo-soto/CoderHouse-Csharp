@@ -10,26 +10,99 @@ namespace SistemaGestionAPI.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        [HttpGet(Name = "GetProducts")]
-        public IEnumerable<Producto> Get()
+        [HttpGet]
+        public IActionResult GetProducts()
         {
-            return ProductBusiness.GetProducts();
+            try
+            {
+                var products = ProductBusiness.GetProducts();
+
+                return Ok(products);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
-        [HttpPost(Name = "CreateProduct")]
-        public void Post([FromBody] Producto product)
+        [HttpGet("{productId}")]
+        public IActionResult GetProductById(int productId)
         {
-            ProductBusiness.CreateProduct(product);
+            try
+            {
+                var product = ProductBusiness.GetProductById(productId);
+
+                if (product != null)
+                {
+                    return Ok(product);
+                }
+                else
+                {
+                    return NotFound("Product not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
-        [HttpPut(Name = "UpdateProduct")]
-        public void Put([FromBody] Producto product)
+        [HttpPost]
+        public IActionResult CreateProduct([FromBody] Producto product)
         {
-            ProductBusiness.UpdateProduct(product);
+            if (product == null)
+            {
+                return BadRequest("Invalid product data.");
+            }
+
+            try
+            {
+                ProductBusiness.CreateProduct(product);
+
+                return Ok("Producto creado satisfactoriamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
-        [HttpDelete(Name = "DeleteProduct")]
-        public void Delete([FromBody] int productId)
+        [HttpPut("{productId}")]
+        public IActionResult UpdateProduct(int productId, [FromBody] Producto product)
         {
-            SoldProductBusiness.DeleteSoldProducts(productId);
-            ProductBusiness.DeleteProduct(productId);
+            if (product == null)
+            {
+                return BadRequest("Invalid product data.");
+            }
+
+            try
+            {
+                ProductBusiness.UpdateProduct(productId, product);
+
+                return Ok("Producto actualizado satisfactoriamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
+        }
+        [HttpDelete("{productId}")]
+        public IActionResult DeleteProductById(int productId)
+        {
+            try
+            {
+                var product = ProductBusiness.GetProductById(productId);
+
+                if (product == null)
+                {
+                    return NotFound();
+                }
+
+                ProductBusiness.DeleteProduct(productId);
+
+                return Ok("Producto eliminado satisfactoriamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
     }
 }

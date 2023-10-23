@@ -1,4 +1,5 @@
-﻿using SistemaGestionEntities;
+﻿using Microsoft.EntityFrameworkCore;
+using SistemaGestionEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,16 +24,34 @@ namespace SistemaGestionData
                 return null;
             }
         }
-        public static Usuario GetUserById(int userId, ApplicationDbContext context)
+        public static Usuario GetUserById(int userId)
         {
             try
             {
-                var user = context.Usuarios.Find(userId);
+                using (var context = new ApplicationDbContext())
+                {
+                    var user = context.Usuarios.Find(userId);
 
-                return user;
-
+                    return user;
+                }
             }
             catch (Exception ex)
+            {
+                throw;
+            }
+        }
+        public static Usuario GetUserByMail(string Mail)
+        {
+            try
+            {
+                using (var context = new ApplicationDbContext())
+                {
+                    var user = context.Usuarios.FirstOrDefault(u => u.Mail == Mail);
+
+                    return user;
+                }
+            }
+            catch  (Exception ex)
             {
                 throw;
             }
@@ -52,15 +71,29 @@ namespace SistemaGestionData
                 throw;
             }
         }
-        public static void UpdateUser(Usuario user)
+        public static void UpdateUser(int userId, Usuario user)
         {
             try
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    var userFound = GetUserById(user.Id, context);
-                    context.Entry(userFound).CurrentValues.SetValues(user);
-                    context.SaveChanges();
+                    var userFound = context.Usuarios.Find(userId);
+
+                    if (userFound != null)
+                    {
+                        userFound.Id = userFound.Id;
+                        userFound.Nombre = user.Nombre;
+                        userFound.Apellido = user.Apellido;
+                        userFound.NombreUsuario = user.NombreUsuario;
+                        userFound.Contraseña = user.Contraseña;
+                        userFound.Mail = user.Mail;
+
+                        context.SaveChanges();
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException($"User with ID {user.Id} not found.");
+                    }
                 }
             }
             catch (Exception ex)
@@ -74,7 +107,7 @@ namespace SistemaGestionData
             {
                 using (var context = new ApplicationDbContext())
                 {
-                    var user = GetUserById(userId, context);
+                    var user = GetUserById(userId);
 
                     if (user != null)
                     {

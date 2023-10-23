@@ -20,3 +20,14 @@ D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaG
 D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\refint\SistemaGestionEntities.dll
 D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.pdb
 D:\CoderHouse-C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\ref\SistemaGestionEntities.dll
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.deps.json
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.dll
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.pdb
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.AssemblyInfoInputs.cache
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.AssemblyInfo.cs
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.csproj.CoreCompileInputs.cache
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.dll
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\refint\SistemaGestionEntities.dll
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.pdb
+C:\Users\arold\Documents\CoderHouse - C#\Proyecto final\SistemaGestionEntities\obj\Debug\net6.0\ref\SistemaGestionEntities.dll

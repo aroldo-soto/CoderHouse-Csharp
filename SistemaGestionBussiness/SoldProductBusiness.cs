@@ -14,6 +14,10 @@ namespace SistemaGestionBusiness
         {
             return SoldProductData.GetSoldProducts();
         }
+        public static ProductoVendido GetSoldProductById(int soldProductId)
+        {
+            return SoldProductData.GetSoldProductById(soldProductId);
+        }
         public static void CreateSoldProduct(ProductoVendido soldProduct)
         {
             SoldProductData.CreateSoldProduct(soldProduct);
@@ -22,9 +26,9 @@ namespace SistemaGestionBusiness
         {
             SoldProductData.CreateSoldProducts(sale);
         }
-        public static void UpdateSoldProduct(ProductoVendido soldProduct)
+        public static void UpdateSoldProduct(int soldProductId, ProductoVendido soldProduct)
         {
-            SoldProductData.UpdateSoldProduct(soldProduct);
+            SoldProductBusiness.UpdateSoldProduct(soldProductId, soldProduct);
         }
         public static void DeleteSoldProduct(int soldProductId)
         {

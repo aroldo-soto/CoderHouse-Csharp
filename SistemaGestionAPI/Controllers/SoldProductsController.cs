@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SistemaGestionBusiness;
+using SistemaGestionBussiness;
 using SistemaGestionEntities;
 
 namespace SistemaGestionAPI.Controllers
@@ -9,25 +10,99 @@ namespace SistemaGestionAPI.Controllers
     [ApiController]
     public class SoldProductsController : ControllerBase
     {
-        [HttpGet(Name = "GetSoldProducts")]
-        public IEnumerable<ProductoVendido> Get()
+        [HttpGet]
+        public IActionResult GetSoldProducts()
         {
-            return SoldProductBusiness.GetSoldProducts();
+            try
+            {
+                var soldProducts = SoldProductBusiness.GetSoldProducts();
+
+                return Ok(soldProducts);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
-        [HttpPost(Name = "CreateSoldProduct")]
-        public void Post([FromBody] ProductoVendido soldProduct)
+        [HttpGet("{soldProductId}")]
+        public IActionResult GetSoldProductById(int soldProductId)
         {
-            SoldProductBusiness.CreateSoldProduct(soldProduct);
+            try
+            {
+                var soldProduct = SoldProductBusiness.GetSoldProductById(soldProductId);
+
+                if (soldProduct != null)
+                {
+                    return Ok(soldProduct);
+                }
+                else
+                {
+                    return NotFound("SoldProduct not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
-        [HttpPut(Name = "UpdateSoldProduct")]
-        public void Put([FromBody] ProductoVendido soldProduct)
+        [HttpPost]
+        public IActionResult CreateSoldProduct([FromBody] ProductoVendido soldProduct)
         {
-            SoldProductBusiness.UpdateSoldProduct(soldProduct);
+            if (soldProduct == null)
+            {
+                return BadRequest("Invalid sold product data.");
+            }
+
+            try
+            {
+                SoldProductBusiness.CreateSoldProduct(soldProduct);
+
+                return Ok("Producto vendido creado satisfactoriamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
-        [HttpDelete(Name = "DeleteSoldProduct")]
-        public void Delete([FromBody] int soldProductId)
+        [HttpPut("{soldProductId}")]
+        public IActionResult UpdateSoldProduct(int soldProductId, [FromBody] ProductoVendido soldProduct)
         {
-            SoldProductBusiness.DeleteSoldProduct(soldProductId);
+            if (soldProduct == null)
+            {
+                return BadRequest("Invalid sold product data.");
+            }
+
+            try
+            {
+                SoldProductBusiness.UpdateSoldProduct(soldProductId, soldProduct);
+
+                return Ok("Producto vendido actualizado satisfactoriamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
+        }
+        [HttpDelete("{soldProductId}")]
+        public IActionResult DeleteSoldProductById(int soldProductId)
+        {
+            try
+            {
+                var soldProduct = SoldProductBusiness.GetSoldProductById(soldProductId);
+
+                if (soldProduct == null)
+                {
+                    return NotFound();
+                }
+
+                SoldProductBusiness.DeleteSoldProduct(soldProductId);
+
+                return Ok("Product vendido eliminado satisfactoriamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error");
+            }
         }
     }
 }
